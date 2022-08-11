@@ -1,0 +1,144 @@
+.navbar_wrapper
+{
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100px;
+    color: #ffffff;
+}
+
+.navbar_container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar_left
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+}
+
+.nav__links
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 550;
+    line-height: 30px;
+}
+
+.nav__links > div > svg 
+{
+    padding-top: 0.4vmax;
+    padding-right: 0.6vmax;
+}
+
+.nav_logo 
+{
+    width: 100%;
+    object-fit: cover;
+}
+
+.connect_btn 
+{
+    background-color: #FFA800;
+    width: 196.33px;
+    height: 53.85px;
+    border-top-left-radius: 26.85px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 26.85px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    padding: 13px, 24px, 13px, 24px;
+    font-size: 1.3vmax;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.navbar_mob
+{
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .navbar_wrapper
+    {
+        display: none;
+    }
+    .navbar_mob
+    {
+        display: block;
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+    }
+    .mob_nav_container 
+    {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1vmax;
+    }
+    .mob_nav_tab > svg
+    {
+        font-size: 3vmax;
+        color: #ffffff;
+        background-color: #09091F;
+        border-radius: 50%;
+        padding: 0.5vmax;
+    }
+    .sideBar 
+    {
+        background-color: #09091F;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 11;
+        width: 30%;
+        height: 100vh;
+    }
+    .times 
+    {
+        float: right;
+        padding: 1.5vmax;
+    }
+    .times > svg 
+    {
+        color: #ffffff;
+        font-size: 2vmax;
+    }
+    .mob_nav__links 
+    {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 3vmax 2vmax;
+        font-size: 2vmax;
+    }
+    .mob_nav__links > div > svg 
+    {
+        padding-top: 0.6vmax;
+        margin-right: 0.6vmax;
+    }
+    .connect_btn
+    {
+        margin: 1vmax 2vmax;
+        font-size: 1.7vmax;
+    }
+}
+
+@media screen and (max-width: 701px) {
+    .sideBar 
+    {
+        width: 80%;
+    }
+}
